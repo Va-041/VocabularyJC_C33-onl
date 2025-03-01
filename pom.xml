@@ -60,7 +60,7 @@
                         <!-- Default configuration for running with: mvn clean javafx:run -->
                         <id>default-cli</id>
                         <configuration>
-                            <mainClass>org.example.vocabularyjc25/org.example.vocabularyjc25.HelloApplication
+                            <mainClass>org.example.vocabularyjc25/org.example.vocabularyjc25.VocabJC25Application
                             </mainClass>
                             <launcher>app</launcher>
                             <jlinkZipName>app</jlinkZipName>

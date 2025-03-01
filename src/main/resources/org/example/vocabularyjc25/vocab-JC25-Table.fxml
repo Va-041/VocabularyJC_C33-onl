@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="TOP_CENTER" prefHeight="506.0" prefWidth="557.0" spacing="20.0"
+      xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="org.example.vocabularyjc25.VocabJC25Controller">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+
+    <children>
+        <TextField fx:id="textValue"/>
+        <Label fx:id="warningLabel" text="Field cannot be empty!" textFill="red" visible="false"/>
+        <ListView prefHeight="300.0" prefWidth="300.0" fx:id="listView"/>
+
+        <HBox spacing="10.0">
+            <Button mnemonicParsing="false" text="Save" onAction="#saveVocabulary" fx:id="save"/>
+            <Pane HBox.hgrow="ALWAYS"/>
+            <Button mnemonicParsing="false" prefWidth="70.0" text="Add" onAction="#addWord" fx:id="add"/>
+            <Button mnemonicParsing="false" prefWidth="70.0" text="Delete" onAction="#deleteWord" fx:id="delete"/>
+            <VBox.margin>
+                <Insets top="-10.0"/>
+            </VBox.margin>
+        </HBox>
+
+        <Pane VBox.vgrow="ALWAYS"/>
+        <HBox alignment="CENTER" spacing="10.0">
+            <Button mnemonicParsing="false" prefWidth="120.0" text="Close" onAction="#closeWindow" fx:id="close">
+                <VBox.margin>
+                    <Insets top="200.0"/>
+                </VBox.margin>
+            </Button>
+        </HBox>
+    </children>
+</VBox>
