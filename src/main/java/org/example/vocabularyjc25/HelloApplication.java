@@ -1,4 +1,4 @@
-ypackage org.example.vocabularyjc25;
+package org.example.vocabularyjc25;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
